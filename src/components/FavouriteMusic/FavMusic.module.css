@@ -1,0 +1,85 @@
+.pers_page__title_info {
+    width: 100%;
+    height: 85vh;
+    position: relative;
+    display: flex;
+    margin-bottom: 100px;
+  }
+  .pers_bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 85vh;
+    position: absolute;
+    z-index: -1;
+  }
+  .pers_page__title_info::after {
+    content: "";
+    position: absolute;
+    bottom: -80px;
+    height: 0;
+    background-color: #d9d0ff;
+    width: 100%;
+    height: 50px;
+    box-shadow: 0px -90px 100px 120px #d9d0ff;
+  }
+  .pers_page__genre_img {
+    width: 300px;
+    height: 300px;
+  }
+  .pers_page__genre_title {
+    font-size: 80px;
+    margin: 0 0 0px 150px;
+  }
+  .album_info_box {
+    display: flex;
+    position: absolute;
+    bottom: 35px;
+    left: 50px;
+    align-items: flex-end;
+    gap: 40px;
+    z-index: 2;
+  }
+  .pers_page__author {
+    font-size: 50px;
+    font-weight: 400;
+    color: #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 20px;
+  }
+  .album_info_box__item {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: -900px;
+    bottom: -35px;
+  }
+  .album__info_list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0;
+    gap: 50px;
+    margin-right: 160px;
+    padding-top: 20px;
+  }
+  .album__info_list li {
+    height: 35px;
+    position: relative;
+    align-items: center;
+    display: flex;
+    gap: 15px;
+  }
+  .fav_music .album__info_list li:nth-child(-n + 3)::after {
+    content: "";
+    width: 2px;
+    height: 100%;
+    background-color: red;
+    position: absolute;
+    right: -25px;
+  }
+  .album__info_list li span {
+    color: rgba(0, 0, 0, 0.5);
+  }

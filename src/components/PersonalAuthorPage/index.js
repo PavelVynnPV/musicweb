@@ -1,0 +1,1 @@
+export {default as PersonalAuthorPage} from "./PersonalAuthorPage"

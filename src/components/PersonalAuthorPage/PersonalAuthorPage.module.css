@@ -1,0 +1,161 @@
+.pers_author_page {
+  width: 100%;
+  height: 85vh;
+  position: relative;
+}
+.author__bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 85vh;
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+}
+.author_info_box {
+  display: flex;
+  padding-top: 500px;
+}
+.author_info_box::after {
+  content: "";
+  position: absolute;
+  bottom: -80px;
+  height: 0;
+  background-color: #d9d0ff;
+  width: 100%;
+  height: 50px;
+  box-shadow: 0px -90px 150px 170px #d9d0ff;
+}
+.author__top_info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  z-index: 2;
+  font-size: 20px;
+  gap: 29px;
+  font-weight: bold;
+  position: relative;
+}
+.author__top_info h1 {
+  font-size: 80px;
+}
+.author__info {
+  display: flex;
+  margin: auto;
+  align-items: center;
+}
+.author__info p {
+  padding: 0 40px;
+  border-right: 2px solid #90308c;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.author__info p:nth-child(4) {
+  border: none;
+}
+.author__info p img {
+  width: 30px;
+  height: 20px;
+}
+.author__info p span {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+}
+.author__birthday,
+.author_genre span:nth-child(-n + 1) {
+  position: relative;
+}
+.author__birthday::after,
+.author_genre span:nth-child(-n + 1)::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  right: -15px;
+  top: 8px;
+}
+.author__description {
+  width: 1300px;
+  text-align: left;
+  font-size: 18px;
+  color: #000;
+  margin: auto;
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+  padding: 36px 0;
+}
+.author__description span, .sbscr_numbers, .people {
+  color: rgba(0, 0, 0, 0.5);
+}
+.subscribe {
+  padding: 10px 25px;
+  color: #fff;
+  background: #9c2323;
+  box-shadow: 4px 6px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.author_subscr {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.author__contact_btns {
+  width: 1300px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+  align-items: center;
+}
+.subscribe_numbers {
+  font-size: 18px;
+}
+.contact_links {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+.icon_instagram {
+  background: url(../../../public/images/media_instagram.png);
+}
+.icon_twitter {
+  background: url(../../../public/images/media_twitter.png);
+}
+.icon_youtube {
+  background: url(../../../public/images/media_youtube.png);
+}
+.icon_wiki {
+  background: url(../../../public/images/media_wikipedia.png);
+}
+.icon_twitch {
+  background: url(../../../public/images/media_twitch.png);
+}
+
+.icon_instagram,
+.icon_twitter,
+.icon_youtube,
+.icon_wiki,
+.icon_twitch {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 30px;
+  height: 30px;
+}
+.sbscr_numbers {
+  margin: 0 10px 0 25px;
+}
+.people {
+  font-size: 16px;
+}
+

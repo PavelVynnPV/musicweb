@@ -1,0 +1,262 @@
+.active {
+  display: flex;
+}
+.unActive {
+  display: none;
+}
+
+.login_form,
+.signup_form {
+  width: 640px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 10px;
+  height: 100%;
+}
+.login_form,
+.signup_form h1 {
+  color: #000;
+  font-size: 18px;
+}
+.login_form label,
+.signup_form label {
+  margin-bottom: 11px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000;
+}
+.login_form input,
+.signup_form input {
+  width: 100%;
+  background: rgba(217, 217, 217, 0.2);
+  border-radius: 15px;
+  margin-bottom: 26px;
+  padding: 14px 0 14px 50px;
+  outline: none;
+  border: none;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  border: 3px solid #90308c;
+}
+.login_form input::placeholder,
+.signup_form input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+.submit_btn_without_hover {
+  cursor: not-allowed !important;
+}
+.submit_btn,
+.submit_btn_without_hover {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border: 0.5px solid #90308c;
+  cursor: pointer;
+  background: #90308c;
+  box-shadow: 4px 6px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  background-size: 1px 200px;
+  padding: 14px 0 14px 20px;
+  outline: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 24px;
+  text-shadow: 4px 6px 5px rgba(0, 0, 0, 0.25);
+}
+.sign_form_btns_sign_in_up, .sign_form__sign_in_up_unActive {
+  display: flex;
+  font-size: 20px;
+  font-weight: bold;
+  justify-content: center;
+  gap: 60px;
+}
+.sign_form_btns_sign_in_up {
+  color: rgba(149, 59, 148, 1);
+}
+.sign_form__sign_up_unActive, .sign_form__sign_in_unActive {
+  color: #000;
+}
+.sign_form__sign_in, .sign_form__sign_up {
+  width: 280px;
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 5px solid rgba(144, 48, 140, 1);
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+.sign_form__sign_in_unActive, .sign_form__sign_up_unActive {
+  width: 280px;
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 5px solid #6B6B6B;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+.submit_btn:hover {
+  background-position: 100px;
+}
+
+@keyframes btnanimate {
+  0% {
+    background: linear-gradient(
+      98.3deg,
+      rgb(0, 0, 0) 10.6%,
+      rgb(255, 0, 0) 97.7%
+    );
+  }
+  50% {
+    background: linear-gradient(
+      98.3deg,
+      rgb(0, 0, 0) 50.6%,
+      rgb(255, 0, 0) 97.7%
+    );
+  }
+  100% {
+    background: linear-gradient(
+      98.3deg,
+      rgb(0, 0, 0) 80.6%,
+      rgb(255, 0, 0) 97.7%
+    );
+  }
+}
+.sign_btns {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 26px;
+}
+.signInButton_google button span,
+.logOutBtn button svg {
+  display: none;
+}
+.signInButton button div {
+  background-color: none;
+}
+.signInButton_google button,
+.signInButton_facebook button {
+  width: 310px;
+  height: 47px;
+  border-radius: 15px !important;
+  position: relative;
+  background-color: rgba(198, 0, 0, 1) !important;
+  border: 1px solid rgba(198, 0, 0, 1) !important;
+}
+.signInButton_google div {
+  display: none;
+}
+
+.signInButton_facebook button::after,
+.signInButton_google button::after {
+  content: "Увійти за допомогою";
+  font-size: 16px;
+  position: absolute;
+  display: block;
+  font-weight: 400;
+  text-transform: capitalize;
+  top: 28%;
+  left: 8%;
+  color: #fff;
+}
+.signInButton_facebook button::before {
+  content: "";
+  background: url(../../../public/images/facebook.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100px;
+  height: 16px;
+  position: absolute;
+  right: 3%;
+  top: 28%;
+}
+.signInButton_google button::before {
+  content: "";
+  background: url(../../../public/images/google.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100px;
+  height: 25px;
+  position: absolute;
+  right: 3%;
+  top: 25%;
+}
+
+.signInButton_facebook button {
+  font-size: 0;
+}
+.signInButton_facebook button {
+  width: 310px;
+  height: 47px;
+  background-color: rgba(21, 52, 217, 1) !important;
+  border: 1px solid rgba(21, 52, 217, 1) !important;
+}
+.red_error {
+  color: red;
+  font-weight: bold;
+  position: absolute;
+  font-size: 12px;
+  bottom: 0;
+}
+.relative_for_error {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.logOutBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logOutBtn button {
+  background-color: transparent !important;
+  font-size: 0 !important;
+  position: relative;
+}
+.logOutBtn button::after {
+  content: "Вийти";
+  color: #fff !important;
+  font-size: 25px !important;
+  font-weight: bold;
+}
+.logOutBtn button div {
+  background-color: transparent !important;
+  padding: 0 !important;
+}
+.logOutBtn button span {
+  padding: 0 !important;
+}
+.menu__list_item_icon {
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+}
+.logOutBtn span:nth-child(1) {
+  background-image: url(../../../public/images/menu_mini_exit_icon.svg);
+  display: flex;
+  margin: 0;
+}
+.email_icon_form {
+  background: url(../../../public/images/email_icon_form.png);
+}
+.profile_icon_form {
+  background: url(../../../public/images/acc_icon_form.png);
+}
+.password_icon_form {
+  background: url(../../../public/images/pass_icon_form.png);
+ 
+}
+.password_icon_form, .profile_icon_form, .email_icon_form {
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  bottom: 36%;
+  left: 3%;
+}
